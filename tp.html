@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /* Reset & Base */
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+      a {
+        text-decoration: none;
+      }
+
+      /* Container */
+      .email-container {
+        max-width: 550px;
+        margin: 40px auto;
+        background: #ffffff;
+        border: 1px solid #e0e0e0;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      }
+
+      /* Header */
+      .status-header {
+        padding: 40px 30px 20px 30px;
+        background-color: #ffffff;
+      }
+
+      /* Dynamic Colors */
+      .highlight-green {
+        color: #00b371;
+      }
+      .highlight-red {
+        color: #f6465d;
+      }
+
+      /* Data Rows */
+      .detail-row {
+        border-top: 1px solid #f0f0f0;
+        padding: 16px 30px;
+      }
+      .detail-row table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .detail-label {
+        color: #666;
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .detail-value {
+        color: #333;
+        font-size: 14px;
+        font-family: monospace;
+        letter-spacing: 0.5px;
+        font-weight: 600;
+      }
+
+      /* Primary Button Area */
+      .action-area {
+        padding: 30px;
+        text-align: center;
+        border-top: 1px solid #f0f0f0;
+      }
+      .btn-live {
+        background-color: #00b371;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 14px 40px;
+        border-radius: 6px;
+        font-size: 14px;
+        display: inline-block;
+        box-shadow: 0 4px 12px rgba(0, 179, 113, 0.3);
+      }
+      .btn-live:hover {
+        background-color: #009e63;
+      }
+
+      /* App Download Section */
+      .app-download-section {
+        padding: 40px 20px;
+        text-align: center;
+        background-color: #f9f9f9;
+        border-top: 1px solid #eeeeee;
+      }
+      .app-download-title {
+        color: #333;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 0 5px 0;
+      }
+      .app-download-subtitle {
+        color: #666;
+        font-size: 14px;
+        margin: 0 0 20px 0;
+      }
+      .app-buttons {
+        text-align: center;
+      }
+      .app-buttons table {
+        display: inline-block;
+        margin: 0 auto;
+      }
+      .app-btn-img {
+        height: 40px;
+        width: auto;
+        display: block;
+      }
+
+      /* Support Text Block */
+      .support-section {
+        padding: 30px 40px;
+        background-color: #ffffff;
+        color: #333;
+        font-size: 13px;
+        line-height: 1.6;
+        border-bottom: 1px solid #eee;
+        border-top: 1px solid #eee;
+      }
+      .support-link {
+        color: #00b371;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      .support-note {
+        font-size: 12px;
+        color: #888;
+        margin-top: 10px;
+        font-style: italic;
+      }
+
+      /* Footer Section */
+      .contact-footer {
+        background-color: #fafafa;
+        padding: 30px 40px;
+        text-align: center;
+      }
+
+      /* Social Icons */
+      .social-icons {
+        margin-bottom: 25px;
+      }
+      .social-icon-img {
+        width: 32px;
+        height: 32px;
+        margin: 0 8px;
+        border-radius: 50%;
+        background-color: #e0e0e0;
+        padding: 6px;
+        box-sizing: border-box;
+      }
+
+      /* Disclaimer Text */
+      .disclaimer-text {
+        color: #888;
+        font-size: 11px;
+        line-height: 1.5;
+        text-align: justify;
+        margin-bottom: 20px;
+      }
+      .brand-highlight {
+        color: #000;
+        font-weight: bold;
+        background-color: #ffd166;
+        padding: 0 4px;
+      }
+
+      .copyright {
+        color: #aaa;
+        font-size: 11px;
+      }
+
+      .header {
+        /* left aligned, full width */
+        padding-bottom: 10px; /* bottom space you asked for */
+        /* optional: width: 100%; */
+      }
+
+      .logo,
+      .title {
+        display: inline-block; /* make them align in one line [web:31] */
+        vertical-align: middle; /* same vertical center for both [web:31] */
+      }
+
+      .title {
+        font-family: "Inter Tight", sans-serif;
+        font-size: 28px;
+        font-weight: 400;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="status-header">
+        <div class="header">
+          <img
+            src="https://static.holdstation.com/banner/1765359893041.png"
+            width="23"
+            class="logo"
+          />
+          <span class="title">Winance</span>
+        </div>
+
+        <p
+          style="
+            color: #888;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+          "
+        >
+          Trade Notification
+        </p>
+
+        <h1 style="color: #333; font-size: 32px; margin: 0; line-height: 1.2">
+          Take Profit <br />
+          <span class="highlight-green">+240.50 WLD</span>
+        </h1>
+      </div>
+
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Trader Address</td>
+            <td class="detail-value" align="right">0xAA5e...1983</td>
+          </tr>
+        </table>
+      </div>
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Trading Pair</td>
+            <td class="detail-value" align="right">ETH/USD</td>
+          </tr>
+        </table>
+      </div>
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Entry Price</td>
+            <td class="detail-value" align="right">2,840.00</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Close Price</td>
+            <td class="detail-value" align="right">2,950.15</td>
+          </tr>
+        </table>
+      </div>
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Leverage</td>
+            <td class="detail-value highlight-green" align="right">LONG 50x</td>
+          </tr>
+        </table>
+      </div>
+      <div class="detail-row">
+        <table width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="detail-label" align="left">Realized PnL</td>
+            <td class="detail-value highlight-green" align="right">
+              +240.50 WLD
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="action-area">
+        <a
+          href="https://world.org/mini-app?app_id=app_60c094705c114bff41be480e736d9482"
+          class="btn-live"
+          target="_blank"
+          style="
+            background-color: #00b371;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 14px 40px;
+            border-radius: 6px;
+            font-size: 14px;
+            display: inline-block;
+            box-shadow: 0 4px 12px rgba(0, 179, 113, 0.3);
+            text-decoration: none;
+          "
+          >View Position ↗</a
+        >
+      </div>
+
+      <div class="app-download-section">
+        <h2 class="app-download-title">
+          Download
+          <span style="background: #ffd166; color: #000; padding: 0 4px"
+            >Holdstation</span
+          >
+          App Now
+        </h2>
+        <p class="app-download-subtitle">Stay updated everywhere!</p>
+
+        <img
+          src="https://static.holdstation.com/banner/1765342955128.png"
+          alt="Holdstation Logo"
+          style="
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            display: inline-block;
+            border-radius: 8px;
+          "
+        />
+
+        <div class="app-buttons">
+          <table cellpadding="0" cellspacing="0" border="0" align="center">
+            <tr>
+              <td style="padding: 0 8px">
+                <a
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    color: #2d2d2d;
+                    background-color: #d2d2d2;
+                    border-radius: 25px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                  "
+                  href="https://apps.apple.com/us/app/holdstation-web3-wallet/id6444925618"
+                >
+                  <img
+                    src="https://static.holdstation.com/banner/1765363729494.png"
+                    width="18"
+                    height="18"
+                    alt="Appstore"
+                    style="vertical-align: middle"
+                  />
+                  <span style="color: #2d2d2d">App Store</span></a
+                >
+              </td>
+              <td style="padding: 0 8px">
+                <a
+                  target="_blank"
+                  style="
+                    display: inline-block;
+                    color: #2d2d2d;
+                    background-color: #d2d2d2;
+                    border-radius: 25px;
+                    padding: 10px 20px;
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 500;
+                  "
+                  href="https://play.google.com/store/apps/details?id=io.holdstation"
+                >
+                  <img
+                    src="https://static.holdstation.com/banner/1765363948225.png"
+                    width="18"
+                    height="18"
+                    alt="Google Play"
+                    style="vertical-align: middle"
+                  />
+                  <span style="color: #2d2d2d">Google Play</span></a
+                >
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="support-section">
+        <p style="margin-top: 0">
+          <strong>Have any questions or need help?</strong>
+        </p>
+        <p style="margin-bottom: 0">
+          Contact us on Telegram:
+          <a
+            href="https://t.me/HoldstationW_EN"
+            class="support-link"
+            target="_blank"
+            style="color: #00b371; font-weight: bold; text-decoration: none"
+            >@HoldstationW_EN</a
+          >
+          <br />
+          Follow our
+          <a
+            href="https://x.com/HoldstationW"
+            class="support-link"
+            target="_blank"
+            style="color: #00b371; font-weight: bold; text-decoration: none"
+            >X(Twitter)</a
+          >
+          for more updates from Holdstation.
+        </p>
+        <p class="support-note">
+          *This email is sent automatically and you don't need to reply.
+        </p>
+      </div>
+
+      <div class="contact-footer">
+        <div class="social-icons">
+          <a href="https://x.com/HoldstationW" target="_blank"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png"
+              class="social-icon-img"
+          /></a>
+          <a href="https://t.me/HoldstationW_EN" target="_blank"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968804.png"
+              class="social-icon-img"
+          /></a>
+        </div>
+
+        <p class="disclaimer-text">
+          Note: Online support and
+          <span class="brand-highlight">Holdstation</span> staff will never ask
+          you to provide confidential account information via email,
+          communication channels or any social media. Please do not disclose
+          your account information to anyone. Please contact us through the
+          methods below if you encounter any suspicious situations.
+        </p>
+
+        <p class="copyright">@2025 Holdstation.com reserves all rights.</p>
+      </div>
+    </div>
+  </body>
+</html>
