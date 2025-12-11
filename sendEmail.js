@@ -7,13 +7,10 @@ const smtpServer = "smtp.gmail.com"; // e.g., smtp.gmail.com
 const smtpPort = 587; // Use 465 for SSL, 587 for TLS
 const appPassword = "cjam umsd wppu efye";
 const fromEmail = "thainguyen12.work@gmail.com"; // Your Gmail address
-const toEmail = "nguyenthanh236@gmail.com";
+const toEmail = "thainguyen12.social@gmail.com";
 
 // Read the HTML content from close.html
-const htmlContent = fs.readFileSync(
-  path.join(__dirname, "liquid.html"),
-  "utf8"
-);
+const htmlContent = fs.readFileSync(path.join(__dirname, "tp.html"), "utf8");
 
 // Create a transporter object using SMTP transport
 const transporter = nodemailer.createTransport({
@@ -46,7 +43,7 @@ const transporter = nodemailer.createTransport({
 const mailOptions = {
   from: fromEmail,
   to: toEmail,
-  subject: "Winance: liquid",
+  subject: "Winance: tp",
   html: htmlContent,
 };
 
